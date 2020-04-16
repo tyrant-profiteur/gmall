@@ -1,6 +1,9 @@
 package com.tyrant.gmall.user.mapper;
 
+import com.tyrant.gmall.user.bean.UmsMember;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * @author:profiteur
@@ -9,5 +12,5 @@ import org.springframework.stereotype.Repository;
  **/
 @Repository
 public interface UserMapper {
-
+    List<UmsMember> selectAllUser();
 }

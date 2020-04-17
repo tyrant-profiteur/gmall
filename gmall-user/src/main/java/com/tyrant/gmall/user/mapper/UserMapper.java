@@ -2,6 +2,7 @@ package com.tyrant.gmall.user.mapper;
 
 import com.tyrant.gmall.user.bean.UmsMember;
 import org.springframework.stereotype.Repository;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
@@ -11,6 +12,6 @@ import java.util.List;
  * @description
  **/
 @Repository
-public interface UserMapper {
+public interface UserMapper  extends Mapper<UmsMember> {
     List<UmsMember> selectAllUser();
 }

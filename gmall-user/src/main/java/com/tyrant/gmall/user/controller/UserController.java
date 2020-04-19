@@ -1,9 +1,11 @@
 package com.tyrant.gmall.user.controller;
 
 import com.tyrant.gmall.user.bean.UmsMember;
+import com.tyrant.gmall.user.bean.UmsMemberReceiveAddress;
 import com.tyrant.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -29,5 +31,12 @@ public class UserController {
     @ResponseBody
     public List<UmsMember> getAllUser(){
         return userService.getAllUser();
+    }
+
+    @RequestMapping("getReceiveAddress")
+    @ResponseBody
+    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId) {
+        List<UmsMemberReceiveAddress> umsMemberReceiveAddressList = userService.getReceiveAddressByMemberId(memberId);
+        return umsMemberReceiveAddressList;
     }
 }

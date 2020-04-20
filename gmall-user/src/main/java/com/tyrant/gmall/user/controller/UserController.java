@@ -25,9 +25,47 @@ public class UserController {
         return "hello user";
     }
 
+    /**
+     * 查询所有
+     * @return
+     */
     @RequestMapping("getAllUser")
     @ResponseBody
     public List<UmsMember> getAllUser(){
         return userService.getAllUser();
+    }
+
+    /**
+     * 根据 id 查找人员
+     * @param id
+     * @return
+     */
+    @RequestMapping("getUserById")
+    @ResponseBody
+    public UmsMember getUserById(int id){
+        UmsMember umsMember = userService.getUserById(id);
+        return umsMember;
+    }
+
+    /**
+     * 根据 id 删除人员
+     * @param id
+     */
+    @RequestMapping("deleteUmsMemberById")
+    @ResponseBody
+    public void deleteUmsMemberById(int id){
+        userService.deleteUmsMemberById(id);
+    }
+
+    /**
+     * 修改人员信息
+     * @param id
+     * @return
+     */
+    @RequestMapping("updateMemberById")
+    @ResponseBody
+    public UmsMember updateMemberById(int id){
+        UmsMember umsMember = userService.updateUserById(id);
+        return umsMember;
     }
 }

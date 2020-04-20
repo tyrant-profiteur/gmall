@@ -11,4 +11,10 @@ import java.util.List;
  **/
 public interface UserService {
      List<UmsMember> getAllUser();
+
+     UmsMember getUserById(int id);
+
+     void deleteUmsMemberById(int id);
+
+     UmsMember updateUserById(int id);
 }

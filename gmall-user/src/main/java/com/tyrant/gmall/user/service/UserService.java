@@ -1,6 +1,7 @@
 package com.tyrant.gmall.user.service;
 
 import com.tyrant.gmall.user.bean.UmsMember;
+import com.tyrant.gmall.user.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 

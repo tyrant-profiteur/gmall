@@ -43,4 +43,9 @@ public class UserServiceImpl implements UserService {
         userMapper.updateByPrimaryKey(umsMember);
         return umsMember;
     }
+
+    @Override
+    public void insertUser(UmsMember umsMember) {
+        userMapper.insert(umsMember);
+    }
 }

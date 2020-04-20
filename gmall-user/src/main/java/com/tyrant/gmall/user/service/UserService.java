@@ -17,4 +17,6 @@ public interface UserService {
      void deleteUmsMemberById(int id);
 
      UmsMember updateUserById(int id);
+
+     void insertUser(UmsMember umsMember);
 }

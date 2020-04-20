@@ -1,7 +1,6 @@
 package com.tyrant.gmall.user.service;
 
 import com.tyrant.gmall.user.bean.UmsMember;
-import com.tyrant.gmall.user.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 
@@ -14,4 +13,12 @@ public interface UserService {
      List<UmsMember> getAllUser();
 
      List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String id);
+
+     UmsMember getUserById(int id);
+
+     void deleteUmsMemberById(int id);
+
+     UmsMember updateUserById(int id);
+
+     void insertUser(UmsMember umsMember);
 }

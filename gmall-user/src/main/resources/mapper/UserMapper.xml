@@ -7,4 +7,8 @@
     <select id="selectAllUser" resultType="com.tyrant.gmall.user.bean.UmsMember">
         select * from ums_member
     </select>
+
+    <select id="selectUserById" resultType="com.tyrant.gmall.user.bean.UmsMember" parameterType="int">
+        select * from ums_member t where t.id = #{identity}
+    </select>
 </mapper>

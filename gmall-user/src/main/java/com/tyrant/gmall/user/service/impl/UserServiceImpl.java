@@ -35,4 +35,29 @@ public class UserServiceImpl implements UserService {
         e.createCriteria().andEqualTo("memberId",memberId);
         return umsMemberReceiveAddressMapper.selectByExample(e);
     }
+
+    @Override
+    public UmsMember getUserById(int id) {
+        return userMapper.selectUserById(id);
+    }
+
+    @Override
+    public void deleteUmsMemberById(int id) {
+        Example e = new Example(UmsMember.class);
+        e.createCriteria().andEqualTo("id",id);
+        userMapper.deleteByExample(e);
+    }
+
+    @Override
+    public UmsMember updateUserById(int id) {
+        UmsMember umsMember = userMapper.selectUserById(id);
+        umsMember.setUsername("tyrant");
+        userMapper.updateByPrimaryKey(umsMember);
+        return umsMember;
+    }
+
+    @Override
+    public void insertUser(UmsMember umsMember) {
+        userMapper.insert(umsMember);
+    }
 }

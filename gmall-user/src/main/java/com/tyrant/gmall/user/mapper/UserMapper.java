@@ -14,4 +14,6 @@ import java.util.List;
 @Repository
 public interface UserMapper  extends Mapper<UmsMember> {
     List<UmsMember> selectAllUser();
+
+    UmsMember selectUserById(int id);
 }

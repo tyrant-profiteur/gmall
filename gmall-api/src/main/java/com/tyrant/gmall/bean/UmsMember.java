@@ -1,4 +1,6 @@
-package com.atguigu.gmall.bean;
+package com.tyrant.gmall.bean;
+
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -6,6 +8,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
+@Repository
 public class UmsMember implements Serializable{
 
     @Id

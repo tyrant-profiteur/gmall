@@ -1,8 +1,8 @@
 package com.tyrant.gmall.user.controller;
 
-import com.tyrant.gmall.user.bean.UmsMember;
-import com.tyrant.gmall.user.bean.UmsMemberReceiveAddress;
-import com.tyrant.gmall.user.service.UserService;
+import com.tyrant.gmall.bean.UmsMember;
+import com.tyrant.gmall.bean.UmsMemberReceiveAddress;
+import com.tyrant.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

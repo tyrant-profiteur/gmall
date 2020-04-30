@@ -1,0 +1,31 @@
+
+spring:
+  #jdbc
+  datasource:
+    password: 123456
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gmall?useUnicode=true&characterEncoding=utf-8&useSSL=false
+
+  #dubbo
+  dubbo:
+    application:
+      name: user-service # dubbo 服务名称
+    registry:
+      protocol: zookeeper # zookeeper 通讯协议名称
+      address: 192.168.222.20:2181  # 注册中心地址
+    base-package: com.tyrant.gmall # 扫描的包
+    protocol:
+      name: dubbo # dubbo 通讯协议名称
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8097
+
+#日志等级
+logging:
+  level: debug

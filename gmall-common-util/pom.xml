@@ -59,6 +59,11 @@
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
+<!--解决 Cannot determine embedded database driver class for database type NONE-->
+        <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.101tec</groupId>

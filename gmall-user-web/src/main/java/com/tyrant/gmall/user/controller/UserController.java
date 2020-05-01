@@ -1,5 +1,6 @@
 package com.tyrant.gmall.user.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.tyrant.gmall.bean.UmsMember;
 import com.tyrant.gmall.bean.UmsMemberReceiveAddress;
 import com.tyrant.gmall.service.UserService;
@@ -17,7 +18,8 @@ import java.util.List;
  **/
 @Controller
 public class UserController {
-    @Autowired
+    //不在同一个容器，Autowired 无法注入，改用 dubbo 的协议代理
+    @Reference
     private UserService userService;
 
     @RequestMapping("index")

@@ -1,10 +1,10 @@
-package com.tyrant.gmall.user;
+package com.tyrant.gmall.manage;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GmallUserWebApplicationTests {
+class GmallManageServiceApplicationTests {
 
     @Test
     void contextLoads() {

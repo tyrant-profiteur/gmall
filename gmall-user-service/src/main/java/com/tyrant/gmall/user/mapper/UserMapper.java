@@ -1,6 +1,6 @@
 package com.tyrant.gmall.user.mapper;
 
-import com.tyrant.gmall.bean.UmsMember;
+import com.tyrant.gmall.beans.UmsMember;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 

@@ -1,4 +1,4 @@
-package com.tyrant.gmall.bean;
+package com.tyrant.gmall.beans;
 
 import javax.persistence.Id;
 import java.io.Serializable;

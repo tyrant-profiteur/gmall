@@ -1,9 +1,9 @@
 package com.tyrant.gmall.user.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.tyrant.gmall.bean.UmsMember;
-import com.tyrant.gmall.bean.UmsMemberReceiveAddress;
-import com.tyrant.gmall.service.UserService;
+import com.tyrant.gmall.beans.UmsMember;
+import com.tyrant.gmall.beans.UmsMemberReceiveAddress;
+import com.tyrant.gmall.service.user.UserService;
 import com.tyrant.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.tyrant.gmall.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;

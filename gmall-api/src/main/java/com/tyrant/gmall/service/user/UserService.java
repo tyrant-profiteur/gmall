@@ -1,8 +1,7 @@
-package com.tyrant.gmall.service;
+package com.tyrant.gmall.service.user;
 
-import com.tyrant.gmall.bean.UmsMember;
-import com.tyrant.gmall.bean.UmsMemberReceiveAddress;
-import tk.mybatis.mapper.entity.Example;
+import com.tyrant.gmall.beans.UmsMember;
+import com.tyrant.gmall.beans.UmsMemberReceiveAddress;
 
 import java.util.List;
 

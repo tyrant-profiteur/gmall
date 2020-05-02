@@ -1,4 +1,4 @@
-package com.tyrant.gmall.bean;
+package com.tyrant.gmall.beans;
 
 import org.springframework.stereotype.Repository;
 

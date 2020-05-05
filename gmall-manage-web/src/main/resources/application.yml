@@ -3,21 +3,21 @@ spring:
   #dubbo
   dubbo:
     application:
-      name: manage-web # dubbo 服务名称
+      name: manage-web # dubbo 鏈嶅姟鍚嶇О
     registry:
-      protocol: zookeeper # zookeeper 通讯协议名称
-      address: 192.168.0.115:2181  # 注册中心地址
-    base-package: com.tyrant.gmall # 扫描的包
+      protocol: zookeeper # zookeeper 閫氳鍗忚鍚嶇О
+      address: 192.168.0.115:2181  #娉ㄥ唽涓績鍦板潃
+    base-package: com.tyrant.gmall # 鎵弿鐨勫寘
     protocol:
-      name: dubbo # dubbo 通讯协议名称
+      name: dubbo # dubbo 閫氳鍗忚鍚嶇О
     consumer:
-      timeout: 600000 # 超时时间
-      check: false # 设置是否检查服务存在
+      timeout: 600000 # 杩炴帴瓒呮椂
+      check: false # 妫�鏌ervice鏄惁鍚姩
 
 server:
   port: 8091
 
-#日志等级
+#鏃ュ織绛夌骇
 logging:
   level: debug
 

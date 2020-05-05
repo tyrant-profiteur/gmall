@@ -12,13 +12,13 @@ spring:
   #dubbo
   dubbo:
     application:
-      name: manage-service # dubbo 服务名称
+      name: manage-web # dubbo 鏈嶅姟鍚嶇О
     registry:
-      protocol: zookeeper # zookeeper 通讯协议名称
-      address: 192.168.0.115:2181  # 注册中心地址
-    base-package: com.tyrant.gmall # 扫描的包
+      protocol: zookeeper # zookeeper 閫氳鍗忚鍚嶇О
+      address: 192.168.0.115:2181  #娉ㄥ唽涓績鍦板潃
+    base-package: com.tyrant.gmall # 鎵弿鐨勫寘
     protocol:
-      name: dubbo # dubbo 通讯协议名称
+      name: dubbo # dubbo 閫氳鍗忚鍚嶇О
 
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
@@ -28,6 +28,6 @@ mybatis:
 server:
   port: 8092
 
-#日志等级
+#鏃ュ織绛夌骇
 logging:
   level: debug

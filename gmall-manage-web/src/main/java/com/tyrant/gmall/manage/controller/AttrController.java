@@ -6,6 +6,7 @@ import com.tyrant.gmall.beans.PmsBaseAttrValue;
 import com.tyrant.gmall.service.manage.AttrService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -38,7 +39,8 @@ public class AttrController {
 
     @RequestMapping("saveAttrInfo")
     @ResponseBody
-    public List<PmsBaseAttrInfo> saveAttrInfo(){
-        return null;
+    public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
+        String result = attrService.saveAttrInfo(pmsBaseAttrInfo);
+        return result;
     }
 }

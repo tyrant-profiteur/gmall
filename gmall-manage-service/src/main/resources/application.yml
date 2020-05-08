@@ -12,10 +12,10 @@ spring:
   #dubbo
   dubbo:
     application:
-      name: manage-web # dubbo 服务名称
+      name: manage-service # dubbo 服务名称
     registry:
       protocol: zookeeper # zookeeper 通讯协议名称
-      address: 192.168.0.115:2181  #注册中心地址
+      address: 192.168.0.104:2181  #注册中心地址
     base-package: com.tyrant.gmall # 扫描的包
     protocol:
       name: dubbo # dubbo 通讯协议名称

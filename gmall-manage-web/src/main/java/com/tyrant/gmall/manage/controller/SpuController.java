@@ -36,4 +36,10 @@ public class SpuController {
         List<PmsProductSaleAttr> spuSaleAttrList = spuService.getSpuSaleAttrList(spuId);
         return spuSaleAttrList;
     }
+
+    @ResponseBody
+    @RequestMapping("saveSpuInfo")
+    public List<PmsProductSaleAttr> saveSpuInfo(@RequestBody PmsProductInfo pmsProductInfo){
+        return null;
+    }
 }

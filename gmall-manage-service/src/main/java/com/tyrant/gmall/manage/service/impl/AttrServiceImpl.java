@@ -22,6 +22,8 @@ public class AttrServiceImpl implements AttrService {
     private PmsBaseAttrInfoMapper pmsBaseAttrInfoMapper;
     @Autowired
     private PmsBaseAttrValueMapper pmsBaseAttrValueMapper;
+    @Autowired
+    private PmsBaseSaleAttrListMapper pmsBaseSaleAttrListMapper;
 
     @Override
     public List<PmsBaseAttrInfo> getAttrInfoListByCatalog3Id(String catalog3Id) {
@@ -61,5 +63,11 @@ public class AttrServiceImpl implements AttrService {
             pmsBaseAttrValueMapper.insertSelective(pmsBaseAttrValue);
         }
         return "success";
+    }
+
+    @Override
+    public List<PmsBaseSaleAttr> getbaseSaleAttrList() {
+        List<PmsBaseSaleAttr> baseSaleAttrList = pmsBaseSaleAttrListMapper.selectAll();
+        return baseSaleAttrList;
     }
 }

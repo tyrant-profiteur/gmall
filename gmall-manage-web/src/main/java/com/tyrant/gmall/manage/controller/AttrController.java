@@ -3,6 +3,7 @@ package com.tyrant.gmall.manage.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tyrant.gmall.beans.PmsBaseAttrInfo;
 import com.tyrant.gmall.beans.PmsBaseAttrValue;
+import com.tyrant.gmall.beans.PmsBaseSaleAttr;
 import com.tyrant.gmall.service.manage.AttrService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -42,5 +43,12 @@ public class AttrController {
     public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
         String result = attrService.saveAttrInfo(pmsBaseAttrInfo);
         return result;
+    }
+
+    @RequestMapping("baseSaleAttrList")
+    @ResponseBody
+    public List<PmsBaseSaleAttr> baseSaleAttrList(){
+        List<PmsBaseSaleAttr> baseSaleAttrList = attrService.getbaseSaleAttrList();
+        return baseSaleAttrList;
     }
 }

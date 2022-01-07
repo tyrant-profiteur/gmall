@@ -38,7 +38,7 @@
         <jest.version>5.3.3</jest.version>
         <jna.version>5.3.1</jna.version>
         <beanUtils.version>1.9.3</beanUtils.version>
-        <h2.version>1.4.197</h2.version>
+        <h2.version>2.0.206</h2.version>
     </properties>
 
     <dependencyManagement>
